@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url="https://epg.yang-1989.eu.org/epg.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
-#EXTINF:-1 tvg-id="緯來日本台" tvg-name=緯來日本台" tvg-logo="https://epg.yang-1989.eu.org/logo/緯來日本.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」",緯來日本「Relay」
+#EXTINF:-1 tvg-id="緯來日本台" tvg-name=緯來日本台" tvg-logo="https://epg.yang-1989.eu.org/logo/緯來日本.png" http-user-agent="okhttp/1.9.89" group-title="",緯來日本「Relay」
 https://cdn-2.ttvb.eu.org/api/VL-Japan/index.m3u8
 #EXTINF:-1 tvg-id="緯來體育台" tvg-name="緯來體育台" tvg-logo="https://epg.yang-1989.eu.org/logo/緯來體育.png" http-user-agent="okhttp/1.9.89" group-title="•台湾「限制」",緯來體育「Relay」
 https://cdn-2.ttvb.eu.org/api/VL-Sports/index.m3u8
