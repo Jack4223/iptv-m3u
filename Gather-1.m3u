@@ -134,7 +134,7 @@ https://cdn-2.ttvb.eu.org/4gtv/4gtv-4gtv044/index.m3u8
 https://cdn-2.ttvb.eu.org/4gtv/4gtv-live017/index.m3u8
 #EXTINF:-1 tvg-id="精選動漫台" tvg-name="精選動漫台" tvg-logo="https://epg.yang-1989.eu.org/logo/精選動漫台.png" http-user-agent="okhttp/1.9.89" group-title="動畫",精選動漫
 https://cdn-2.ttvb.eu.org/4gtv/4gtv-live024/index.m3u8
-#EXTINF:-1 tvg-id="經典卡通台" tvg-name="經典卡通台" tvg-logo="https://epg.yang-1989.eu.org/logo/經典卡通台.png" http-user-agent="okhttp/1.9.89" group-title=""動畫,經典卡通
+#EXTINF:-1 tvg-id="經典卡通台" tvg-name="經典卡通台" tvg-logo="https://epg.yang-1989.eu.org/logo/經典卡通台.png" http-user-agent="okhttp/1.9.89" group-title="動畫",經典卡通
 https://cdn-2.ttvb.eu.org/4gtv/4gtv-live022/index.m3u8
 
 
