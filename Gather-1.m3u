@@ -45,6 +45,8 @@ https://cdn-2.ttvb.eu.org/api/VL-Movies/index.m3u8
 https://cdn-2.ttvb.eu.org/api/LSTIME-Movie/index.m3u8
 #EXTINF:-1 tvg-id="東森洋片台" tvg-name="東森洋片台" tvg-logo="https://epg.yang-1989.eu.org/logo/東森洋片台.png" http-user-agent="okhttp/1.9.89" group-title="電影",東森洋片
 https://cdn-2.ttvb.eu.org/api/ET-Foreign-Movie-Channel/index.m3u8
+#EXTINF:-1 tvg-id="HBO" tvg-name="HBO" tvg-logo="https://epg.yang-1989.eu.org/logo/HBO.png" http-user-agent="okhttp/1.9.89" group-title="電影",HBO
+http://103.58.160.157:8278/720-HBO/playlist.m3u8
 #EXTINF:-1 tvg-id="好萊塢電影台" tvg-name="好萊塢電影台" tvg-logo="https://epg.yang-1989.eu.org/logo/好萊塢電影台.png" http-user-agent="okhttp/1.9.89" group-title="電影",好萊塢電影
 https://cdn-2.ttvb.eu.org/api/Hollywood-Movie/index.m3u8
 #EXTINF:-1 tvg-id="CINEMAX" tvg-name="CINEMAX" tvg-logo="https://epg.yang-1989.eu.org/logo/CINEMAX.png" http-user-agent="okhttp/1.9.89" group-title="電影",CINEMAX
@@ -136,7 +138,6 @@ https://cdn-2.ttvb.eu.org/4gtv/4gtv-live017/index.m3u8
 https://cdn-2.ttvb.eu.org/4gtv/4gtv-live024/index.m3u8
 #EXTINF:-1 tvg-id="經典卡通台" tvg-name="經典卡通台" tvg-logo="https://epg.yang-1989.eu.org/logo/經典卡通台.png" http-user-agent="okhttp/1.9.89" group-title="動畫",經典卡通
 https://cdn-2.ttvb.eu.org/4gtv/4gtv-live022/index.m3u8
-
 
 #EXTINF:-1 tvg-id="緯來綜合台" tvg-name="緯來綜合台" tvg-logo="https://epg.yang-1989.eu.org/logo/緯來綜合.png" http-user-agent="okhttp/1.9.89" group-title="綜合",緯來綜合
 https://cdn-2.ttvb.eu.org/api/VL-ONTV/index.m3u8
