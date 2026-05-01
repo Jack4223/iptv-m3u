@@ -46,7 +46,7 @@ https://cdn-2.ttvb.eu.org/api/LSTIME-Movie/index.m3u8
 #EXTINF:-1 tvg-id="東森洋片台" tvg-name="東森洋片台" tvg-logo="https://epg.yang-1989.eu.org/logo/東森洋片台.png" http-user-agent="okhttp/1.9.89" group-title="電影",東森洋片
 https://cdn-2.ttvb.eu.org/api/ET-Foreign-Movie-Channel/index.m3u8
 #EXTINF:-1 tvg-id="HBO" tvg-name="HBO" tvg-logo="https://epg.yang-1989.eu.org/logo/HBO.png" http-user-agent="okhttp/1.9.89" group-title="電影",HBO
-http://103.58.160.157:8278/720-HBO/playlist.m3u8
+http://23.237.104.106:8080/USA_HBO/index.m3u8
 #EXTINF:-1 tvg-id="好萊塢電影台" tvg-name="好萊塢電影台" tvg-logo="https://epg.yang-1989.eu.org/logo/好萊塢電影台.png" http-user-agent="okhttp/1.9.89" group-title="電影",好萊塢電影
 https://cdn-2.ttvb.eu.org/api/Hollywood-Movie/index.m3u8
 #EXTINF:-1 tvg-id="CINEMAX" tvg-name="CINEMAX" tvg-logo="https://epg.yang-1989.eu.org/logo/CINEMAX.png" http-user-agent="okhttp/1.9.89" group-title="電影",CINEMAX
