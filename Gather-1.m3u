@@ -10,7 +10,7 @@ https://stream1.freetv.fun/93f462bcef7b88dcb0c84d5f3fcc1cefca34a4356b860bb70256d
 #EXTINF:-1 tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://epg.yang-1989.eu.org/logo/台視新聞.png" http-user-agent="okhttp/1.9.89" group-title="新聞",台視新聞
 https://stream1.freetv.fun/e84c6b51786fed95a30015ab67a9deb0c6711adc83cda15534a7591aebd811ae.m3u8
 #EXTINF:-1 tvg-id="年代新聞台" tvg-name="年代新聞台" tvg-logo="https://epg.yang-1989.eu.org/logo/年代新聞台.png" http-user-agent="okhttp/1.9.89" group-title="新聞",年代新聞
-https://cdn-2.ttvb.eu.org/api/Era-News/index.m3u8
+https://stream1.freetv.fun/86002e267108aa2f9bf82b518e6b2f11c0c534dd00359331ace559b86a63a85b.m3u8
 #EXTINF:-1 tvg-id="東森新聞台" tvg-name="東森新聞台" tvg-logo="https://epg.yang-1989.eu.org/logo/東森新聞台.png" http-user-agent="okhttp/1.9.89" group-title="新聞",東森新聞
 https://stream1.freetv.fun/cbe37e117a160244b7019d065d4c40dbb8e95139a53c1fbab4068ef222e82224.m3u8
 #EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天新聞台" tvg-logo="https://epg.yang-1989.eu.org/logo/中天新聞台.png" http-user-agent="okhttp/1.9.89" group-title="新聞",中天新聞
