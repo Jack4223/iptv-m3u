@@ -1,3 +1,5 @@
+#EXTM3U x-tvg-url="https://epg.yang-1989.eu.org/epg.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://epg.yang-1989.eu.org/logo/CCTV1.png" group-title="•央視「Relay」",CCTV 1 綜合「Relay」
 https://cdn-2.ttvb.eu.org/api/CCTV1/index.m3u8
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://epg.yang-1989.eu.org/logo/CCTV2.png" group-title="•央視「Relay」",CCTV 2 財經「Relay」
