@@ -11,11 +11,25 @@
 > https://epg.yang-1989.eu.org/v/301.mp4XTM3U x-tvg-url="https://epg.yang-1989.eu.org/epg.xml.gz" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 #EXTINF:-1 tvg-id="華視新聞" tvg-name="華視新聞" tvg-logo="https://epg.yang-1989.eu.org/logo/華視新聞.png" http-user-agent="okhttp/1.9.89" group-title="新聞",華視新聞
-https://cdn-2.ttvb.eu.org/4gtv/4gtv-4gtv052/index.m3u8
+rtmp://f13h.mine.nu/sat/tv111
+https://stream1.freetv.fun/67b9389152b3ce5b9db2f8d7832978b3a065305b2a4b82e92cdc3577e11a7015.m3u8
+https://stream1.freetv.fun/4ea88a37de2bb1a69fda2f631b257cb4f7fa912c7c999c151d2c4145db972489.m3u8
+https://stream1.freetv.fun/ac3f5d43532b24846965e5c7f0f59da05191d48ee055cb026c14c0490b841478.m3u8
 #EXTINF:-1 tvg-id="中視新聞" tvg-name="中視新聞" tvg-logo="https://epg.yang-1989.eu.org/logo/中視新聞.png" http-user-agent="okhttp/1.9.89" group-title="新聞",中視新聞
-https://cdn-2.ttvb.eu.org/4gtv/4gtv-4gtv074/index.m3u8
-#EXTINF:-1 tvg-id="中視" tvg-name="中視" tvg-logo="https://epg.yang-1989.eu.org/logo/中視.png" http-user-agent="okhttp/1.9.89" group-title="新聞",中視
-https://cdn-2.ttvb.eu.org/4gtv/4gtv-4gtv040/index.m3u8
+rtmp://demo2.anj365.com/live/xiangjiaoge-ztxw
+rtmp://vip.huahong.pro/live/xingjiaoge-ztxw2
+rtmp://f13h.mine.nu/sat/tv091
+#EXTINF:-1,中天新聞FHD
+rtmp://demo2.anj365.com/live/xiangjiaoge-ztxw
+rtmp://vip.huahong.pro/live/xingjiaoge-ztxw2
+rtmp://f13h.mine.nu/sat/tv091
+https://stream1.freetv.fun/382948ff42660a1aaec5278e6157ffeff954e762ed237824718eb7ab4ca7beb7.m3u8
+https://stream1.freetv.fun/9d5ffec09ed08670ea7b11a469c8af857b3d6c49e3a22a74b0ebcae1731a3e55.m3u8
+https://stream1.freetv.fun/b356c31fd9cdb3ba10a59782e142b61d17b062db4ffcb9ca542b636b42d6aa48.m3u8
+https://stream1.freetv.fun/45ac2d27741f80af63fd8e1938e067ec7ea8c1c9ac34b46c6dc31917205cc1bd.m3u8
+https://stream1.freetv.fun/b627cf4f2eb013acefa14cf431cfe770e0f6992c5061c6d1bdf9b3668790e2ef.ctv
+https://stream1.freetv.fun/3f17175a87b98b60022eb1dcafc55f87ccd4203c5f1b467bef42d5d714d82ef6.m3u8
+https://stream1.freetv.fun/c8873c3b27c1c74e1e11812d7440fcfa2e47b3a3ccfb500c672a95dac8cc293e.ctv
 #EXTINF:-1 tvg-id="台視新聞" tvg-name="台視新聞" tvg-logo="https://epg.yang-1989.eu.org/logo/台視新聞.png" http-user-agent="okhttp/1.9.89" group-title="新聞",台視新聞
 https://iptv.yang-1989.eu.org/ofiii/4gtv-4gtv051
 #EXTINF:-1 tvg-id="年代新聞台" tvg-name="年代新聞台" tvg-logo="https://epg.yang-1989.eu.org/logo/年代新聞台.png" http-user-agent="okhttp/1.9.89" group-title="新聞",年代新聞
