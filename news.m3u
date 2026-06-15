@@ -2,10 +2,14 @@
 
 #EXTINF:-1 tvg-id="CTS-N" tvg-name="台視新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",台視新聞台
 https://stream1.freetv.fun/d96ca80f2e6d7eb1a1737aaf17284caded271210e4432dfb4378a9ab6d8ef7b2.m3u8
+
+#EXTINF:-1 tvg-id="CTS-N" tvg-name="台視新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",台視新聞台
 rtmp://f13h.mine.nu/sat/tv071
 
 #EXTINF:-1 tvg-id="CTS-N" tvg-name="中視新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",中視新聞台
 https://stream1.freetv.fun/9d5ffec09ed08670ea7b11a469c8af857b3d6c49e3a22a74b0ebcae1731a3e55.m3u8
+
+#EXTINF:-1 tvg-id="CTS-N" tvg-name="中視新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",中視新聞台
 rtmp://f13h.mine.nu/sat/tv091
 
 #EXTINF:-1 tvg-id="CTS-N" tvg-name="華視新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",華視新聞台
@@ -19,6 +23,8 @@ rtmp://ai.unispc.com/live/nb-py-ztxw
 
 #EXTINF:-1 tvg-id="TVBS-N" tvg-name="TVBS新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",TVBS 新聞台
 https://stream1.freetv.fun/fe6a507303ec6ae76614a96ee48f5844ea4e7636314c1011a22aa4af8269a7a1.ctv
+
+#EXTINF:-1 tvg-id="TVBS-N" tvg-name="TVBS新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",TVBS 新聞台
 https://stream1.freetv.fun/b9008aeb80dd41cc97f7006561fd5af645903c8fe9f44cb2e1e866c841842054.m3u8
 
 #EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" tvg-logo="https://epg.pw" group-title="台灣新聞",TVBS
@@ -29,4 +35,6 @@ rtmp://f13h.mine.nu/sat/tv571
 
 #EXTINF:-1 tvg-id="USTV-N" tvg-name="非凡新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",非凡新聞台
 https://stream1.freetv.fun/0d5a5ce924aa323b57e608e00cf62cbd6628179bf5d0b2e0ddd93a5796ccfbdf.ctv
+
+#EXTINF:-1 tvg-id="USTV-N" tvg-name="非凡新聞台" tvg-logo="https://epg.pw" group-title="台灣新聞",非凡新聞台
 rtmp://f13h.mine.nu/sat/tv581
