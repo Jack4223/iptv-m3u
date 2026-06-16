@@ -1,15 +1,15 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_lite.xml"
 
-#EXTINF:-1 tvg-id="CTS-N" tvg-name="台視新聞台" tvg-logo="https://epg.pw" group-title="新聞",台視新聞台
+#EXTINF:-1 tvg-id="CTS-N" tvg-name="台視新聞台" tvg-logo="https://epg.pw" group-title="新聞",台視新聞台1
 https://stream1.freetv.fun/d96ca80f2e6d7eb1a1737aaf17284caded271210e4432dfb4378a9ab6d8ef7b2.m3u8
 
-#EXTINF:-1 tvg-id="CTS-N" tvg-name="台視新聞台" tvg-logo="https://epg.pw" group-title="新聞",台視新聞台
+#EXTINF:-1 tvg-id="CTS-N" tvg-name="台視新聞台" tvg-logo="https://epg.pw" group-title="新聞",台視新聞台2
 rtmp://f13h.mine.nu/sat/tv071
 
-#EXTINF:-1 tvg-id="CTS-N" tvg-name="中視新聞台" tvg-logo="https://epg.pw" group-title="新聞",中視新聞台
+#EXTINF:-1 tvg-id="CTS-N" tvg-name="中視新聞台" tvg-logo="https://epg.pw" group-title="新聞",中視新聞台1
 https://stream1.freetv.fun/9d5ffec09ed08670ea7b11a469c8af857b3d6c49e3a22a74b0ebcae1731a3e55.m3u8
 
-#EXTINF:-1 tvg-id="CTS-N" tvg-name="中視新聞台" tvg-logo="https://epg.pw" group-title="新聞",中視新聞台
+#EXTINF:-1 tvg-id="CTS-N" tvg-name="中視新聞台" tvg-logo="https://epg.pw" group-title="新聞",中視新聞台2
 rtmp://f13h.mine.nu/sat/tv091
 
 #EXTINF:-1 tvg-id="CTS-N" tvg-name="華視新聞台" tvg-logo="https://epg.pw" group-title="新聞",華視新聞台
