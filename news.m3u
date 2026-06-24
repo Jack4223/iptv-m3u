@@ -12,5 +12,8 @@ http://74.91.26.218:82/live/cts.m3u8
 #EXTINF:-1 tvg-id="EBC-N" tvg-name="中視經典HD台" tvg-logo="https://epg.pw" group-title="新聞",中視經典HD台
 http://74.91.26.218:82/live/ctvjd.m3u8
 
+#EXTINF:-1 tvg-id="EBC-N" tvg-name="TVBS-N台" tvg-logo="https://epg.pw" group-title="新聞",TVBS-N台
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1782323823/ei/D8Y7aqnJGo_AvcAP4rmLiQE/ip/2001:b011:b:fa5b:a8dc:e23b:ad62:f36b/id/m_dhMSvUCIc.7/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr1---sn-ipoxu-un5e7.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/ARmQxEXZgcUCPmNrG_A-5CPWtT4jHxGpWHavEW3YFXT7dKmwRhlO46j8ZzxH59Dte07tJalNi3NineAq/spc/SQ-umvxTpHFcdRV2kF8FXqIZ7WCDnMFfXnfgXwzPQ03TLDPhQg/vprv/1/reg/0/playlist_type/DVR/hcs/sd/met/1782302223,/mh/V0/mm/44/mn/sn-ipoxu-un5e7/ms/lva/mv/u/mvi/1/pl/52/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681,51987687/mt/1782301756/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIhAPQ5PfNeGY2V8LC73meEPbPp446Khmz0xiPym_LYpjdVAiBuYwaffy0z8wpzyn7j7nDaejwhObcVSoTJ5Mck8Kgstg%3D%3D/lsparams/hls_chunk_host,hcs,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAPqNl4Ddx1UljG0fm6c3bjRnIblA5yjRXQA8Quo1iCltAiEAkbG_2a9seje3-X_adbCwS9oF03OIJlwCln4LTMa0-o0%3D/playlist/index.m3u8
+
 #EXTINF:-1 tvg-id="TVBS-N" tvg-name="喜劇電影台" tvg-logo="https://epg.pw" group-title="新聞",喜劇電影台
 http://74.91.26.218:82/live/vlxjyy.m3u8
