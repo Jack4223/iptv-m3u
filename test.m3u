@@ -1,0 +1,55 @@
+#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_lite.xml"
+
+#=== 無線電視分組 ===
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TTV.tw" tvg-name="台視" group-title="無線電視",台視
+http://74.91.26.218:82/live/ttv.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="FTV.tw" tvg-name="中視" group-title="無線電視",中視
+http://74.91.26.218:82/live/ctvjd.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTV.tw" tvg-name="中視" group-title="無線電視",中視
+http://74.91.26.218:82/live/ctv.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTS.tw" tvg-name="華視" group-title="無線電視",華視
+http://74.91.26.218:82/live/cts.m3u8
+rtmp://f13h.mine.nu/sat/tv111
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="PTS.tw" tvg-name="公共電視" group-title="無線電視",公共電視
+http://您的公視直播網址.m3u8
+
+#=== 新聞台分組 ===
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TTVNews.tw" tvg-name="台視新聞台" group-title="新聞台",台視新聞台
+http://您的台視新聞直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="FTVNews.tw" tvg-name="民視新聞台" group-title="新聞台",民視新聞台
+http://您的民視新聞直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTVNews.tw" tvg-name="中視新聞台" group-title="新聞台",中視新聞台
+http://您的中視新聞直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TVBSNews.tw" tvg-name="TVBS新聞台" group-title="新聞台",TVBS新聞台
+http://您的TVBS新聞直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="EBCNews.tw" tvg-name="東森新聞台" group-title="新聞台",東森新聞台
+http://您的東森新聞直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.tv" tvg-id="SETNews.tw" tvg-name="三立新聞台" group-title="新聞台",三立新聞台
+http://您的三立新聞直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTVNews.tw" tvg-name="中天新聞台" group-title="新聞台",中天新聞台
+rtmp://media.atmsiot.com/live/ztxw
+https://stream1.freetv.fun/26909b95e0b48a92beff981e4af1a947e0f4eaf4515fb45d81de571b7a5aaeb0.m3u8
+rtmp://ai.unispc.com/live/nb-py-ztxw
+
+#=== 綜合娛樂分組 ===
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TVBS.tw" tvg-name="TVBS" group-title="綜合娛樂",TVBS
+http://您的TVBS綜合直播網址.m3u8
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="SETMetro.tw" tvg-name="三立都會台" group-title="綜合娛樂",三立都會台
+http://您的三立都會直播網址.m3u8
+
+#=== 電影分組 ===
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="amc電影台" tvg-name="amc電影台" group-title="電影",amc電影台
+https://t.freetv.fun/live/amcdian-ying-tai-tv.m3u8
+
+https://epg.pw/api/epg.xml?lang=zh-hant&date=20260625&channel_id=370245
