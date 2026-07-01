@@ -1,3 +1,0 @@
-央视频道,#genre#
-CCTV1,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8#http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226016/index.m3u8#https://stream1.freetv.fun/961876d0c8bba36f6519d7018724963b00d568ce7a9f1f1b31e2b373b4f1d2b3.m3u8
-CCTV2,https://stream1.freetv.fun/062b52551baba0561e20bdc1f671de7f92ea1e7b432e5ac00ff8934a33e73779.m3u8
