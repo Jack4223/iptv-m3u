@@ -2,30 +2,28 @@
 
 #=== 無線電視分組 ===
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TTV.tw" tvg-name="台視" group-title="無線電視",台視
+rtmp://f13h.mine.nu/sat/tv071
 http://74.91.26.218:82/live/ttv.m3u8
 
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="FTV.tw" tvg-name="中視" group-title="無線電視",中視
-http://74.91.26.218:82/live/ctvjd.m3u8
-
-#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTV.tw" tvg-name="中視" group-title="無線電視",中視
+rtmp://f13h.mine.nu/sat/tv091
 http://74.91.26.218:82/live/ctv.m3u8
 
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTS.tw" tvg-name="華視" group-title="無線電視",華視
-http://74.91.26.218:82/live/cts.m3u8
 rtmp://f13h.mine.nu/sat/tv111
+http://74.91.26.218:82/live/cts.m3u8
 
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="PTS.tw" tvg-name="公共電視" group-title="無線電視",公共電視
-http://您的公視直播網址.m3u8
+https://stream1.freetv.fun/2f9fb003798195324f74f228e4c409c0f5f2fc6f685a9852b171f98d235ec49c.ctv
 
 #=== 新聞台分組 ===
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TTVNews.tw" tvg-name="台視新聞台" group-title="新聞台",台視新聞台
-http://您的台視新聞直播網址.m3u8
-
-#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="FTVNews.tw" tvg-name="民視新聞台" group-title="新聞台",民視新聞台
-http://您的民視新聞直播網址.m3u8
+rtmp://f13h.mine.nu/sat/tv071
+http://74.91.26.218:82/live/ttv.m3u8
 
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="CTVNews.tw" tvg-name="中視新聞台" group-title="新聞台",中視新聞台
-http://您的中視新聞直播網址.m3u8
+rtmp://f13h.mine.nu/sat/tv091
+http://74.91.26.218:82/live/ctv.m3u8
 
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="TVBSNews.tw" tvg-name="TVBS新聞台" group-title="新聞台",TVBS新聞台
 http://您的TVBS新聞直播網址.m3u8
