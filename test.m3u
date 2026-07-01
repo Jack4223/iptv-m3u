@@ -1,7 +1,3 @@
-#EXTM3U x-tvg-url="https://112114.xyz"
-
-#--- 無線電視分組 ---
-
 #EXTINF:-1 tvg-id="台视" tvg-name="台视" group-title="無線電視",台視 (備路1)
 rtmp://f13h.mine.nu/sat/tv071
 
@@ -20,19 +16,8 @@ rtmp://f13h.mine.nu/sat/tv111
 #EXTINF:-1 tvg-id="华视" tvg-name="华视" group-title="無線電視",華視 (備路2)
 http://74.91.26
 
+#EXTINF:-1 tvg-id="民视无线" tvg-name="民视无线" group-title="無線電視",民視
+rtmp://f13h.mine.nu/sat/tv051
+
 #EXTINF:-1 tvg-id="公共电视" tvg-name="公共电视" group-title="無線電視",公共電視
 http://freetv.fun
-
-#--- 新聞台分組 ---
-
-#EXTINF:-1 tvg-id="台视新闻" tvg-name="台视新闻" group-title="新聞台",台視新聞台
-http://您的直播源網址
-
-#EXTINF:-1 tvg-id="中视新闻" tvg-name="中视新闻" group-title="新聞台",中視新聞台
-http://您的直播源網址
-
-#EXTINF:-1 tvg-id="TVBS新闻" tvg-name="TVBS新闻" group-title="新聞台",TVBS新聞台
-http://您的直播源網址
-
-#EXTINF:-1 tvg-id="东森新闻" tvg-name="东森新闻" group-title="新聞台",東森新聞台
-http://您的直播源網址
