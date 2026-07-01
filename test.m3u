@@ -1,8 +1,10 @@
-#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_lite.xml"
+#EXTM3U x-tvg-url="https://epg.pw"
 
 #=== 無線電視分組 ===
-#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="456505" tvg-name="台視" group-title="無線電視",台視
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="456505" tvg-name="台視" group-title="無線電視",台視 (備用)
 rtmp://f13h.mine.nu/sat/tv071
+
+#EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="456505" tvg-name="台視" group-title="無線電視",台視
 http://74.91.26.218:82/live/ttv.m3u8
 
 #EXTINF:-1 tvg-logo="https://epg.pw" tvg-id="370141" tvg-name="中視" group-title="無線電視",中視
