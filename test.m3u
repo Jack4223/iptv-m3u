@@ -1,11 +1,11 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/FongMi/CatVodTVOfficial/main/epg.xml.gz"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/litiande03/epg/refs/heads/master/pl.xml.gz"
 
 #--- 無線電視分組 ---
 
-#EXTINF:-1 tvg-id="台視" tvg-name="台視" group-title="無線電視",台視 (備路1)
+#EXTINF:-1 tvg-id="台視新聞台" tvg-name="台視" group-title="無線電視",台視 (備路1)
 rtmp://f13h.mine.nu/sat/tv071
 
-#EXTINF:-1 tvg-id="台視" tvg-name="台視" group-title="無線電視",台視 (備路2)
+#EXTINF:-1 tvg-id="台視新聞台" tvg-name="台視" group-title="無線電視",台視 (備路2)
 http://74.91.26
 
 #EXTINF:-1 tvg-id="中視" tvg-name="中視" group-title="無線電視",中視 (備路1)
@@ -14,8 +14,8 @@ rtmp://f13h.mine.nu/sat/tv091
 #EXTINF:-1 tvg-id="中視" tvg-name="中視" group-title="無線電視",中視 (備路2)
 http://74.91.26
 
-#EXTINF:-1 tvg-id="华視" tvg-name="华視" group-title="無線電視",華視 (備路1)
+#EXTINF:-1 tvg-id="華視" tvg-name="華視" group-title="無線電視",華視 (備路1)
 rtmp://f13h.mine.nu/sat/tv111
 
-#EXTINF:-1 tvg-id="华視" tvg-name="华視" group-title="無線電視",華視 (備路2)
+#EXTINF:-1 tvg-id="華視" tvg-name="華視" group-title="無線電視",華視 (備路2)
 http://74.91.26
