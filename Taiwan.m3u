@@ -23,16 +23,16 @@ rtmp://f13h.mine.nu/sat/tv111
 #EXTINF:-1 tvg-id="華視新聞台" tvg-name="華視" group-title="無線電視",華視 (備路2)
 http://74.91.26.218:82/live/cts.m3u8
 
-#EXTINF:-1 tvg-id="東森新聞台" tvg-name="東森" group-title="無線電視",東森 (備路1)
+#EXTINF:-1 tvg-id="東森新聞台" tvg-name="東森新聞台" group-title="無線電視",東森 (備路1)
 https://t.freetv.fun/live/dong-sen-xin-wen.m3u8
 
-#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天" group-title="無線電視",中天 (備路1)
+#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天新聞台" group-title="無線電視",中天 (備路1)
 rtmp://ai.unispc.com/live/nb-py-ztxw
 
-#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天" group-title="無線電視",中天 (備路2)
+#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天新聞台" group-title="無線電視",中天 (備路2)
 rtmp://ai.unispc.com/live/nb-py-ztxw
 
-#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天" group-title="無線電視",中天 (備路3)
+#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天新聞台" group-title="無線電視",中天 (備路3)
 rtmp://home.aceimage.cn/live/332123-ztxw
 
 #EXTINF:-1 tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" group-title="無線電視",TVBS (備路1)
@@ -46,9 +46,6 @@ https://t.freetv.fun/live/tvbsxin-wen-1-1.m3u8
 
 #EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" group-title="無線電視",TVBS (備路2)
 https://t.freetv.fun/live/tvbs-1.m3u8
-
-#EXTINF:-1 tvg-id="東森財經新聞台" tvg-name="東森" group-title="無線電視",東森 (備路1)
-https://t.freetv.fun/live/dong-sen-xin-wen.m3u8
 
 #EXTINF:-1 tvg-id="非凡新聞台" tvg-name="非凡新聞台" group-title="無線電視",非凡新聞台 (備路1)
 rtmp://f13h.mine.nu/sat/tv581
