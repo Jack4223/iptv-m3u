@@ -1,125 +1,79 @@
-﻿#EXTM3U8
-#EXTINF:-1,AMC電影
-https://stream1.freetv.fun/ad7211fc797585fd39ab7d6bfc83567df4703cc5c2a5286b8f328d9b4345133c.ctv
-#EXTINF:-1,DAZN 1(TW)
-rtmp://f13h.mine.nu/sat/tv731
-#EXTINF:-1,DAZN 1(TW)
-https://stream1.freetv.fun/2c514f0327df08f640ef530faf4644b6c4992534050b7d4e09569c5b8aabf96b.m3u8
-#EXTINF:-1,Food Network(TW)
-https://stream1.freetv.fun/5889e7999bbd5762c39dcf896c8fb7ec08b5892e0d5db3c75a85151d0154e925.ctv
-#EXTINF:-1,Food Network(TW)
-https://stream1.freetv.fun/b82a7b8a2972a9e15529c339a5cbfa633dd4a212bb9a56dc301c230c15245598.ctv
-#EXTINF:-1,HGTV(TW)
-https://stream1.freetv.fun/216474e80e35b2ba8436cc747cf54e7c43110bd6fd8d425d3f37b7c76f01365e.ctv
-#EXTINF:-1,Love Nature
-https://stream1.freetv.fun/b030d10fd2f7b4894f26a6635ce090079b82025b60c78e03c5ff792ff6144ba9.ctv
-#EXTINF:-1,Love Nature
-https://stream1.freetv.fun/fcb4f4849136f98ed253e6be8bdace33ba0ed547191b5ca4ada25417a14964f6.m3u8
-#EXTINF:-1,MOMO綜合
-rtmp://f13h.mine.nu/sat/tv761
-#EXTINF:-1,MOMO綜合
-rtmp://f13h.mine.nu/sat/tv761
-#EXTINF:-1,MOMO綜合臺
-rtmp://f13h.mine.nu/sat/tv761
-#EXTINF:-1,NICE TV
-https://stream1.freetv.fun/c51b8f7c9dee5b5dfa9e03a30e2efbeef76ef187cd056f9e88e39533c6ee94be.m3u8
-#EXTINF:-1,PET CLUB TV
-https://stream1.freetv.fun/08fd35f18cd1a26fe08be8595efdb627fea3a00f1915d5c68472525eccc3a739.m3u8
-#EXTINF:-1,rollor
-https://stream1.freetv.fun/7800a2993b8300f0ec15bb3d01410220078c20af4158662907a7b6648bcb6ca2.m3u8
-#EXTINF:-1,中天新聞FHD
-rtmp://media.atmsiot.com/live/ztxw
-#EXTINF:-1,中天新聞FHD
-https://stream1.freetv.fun/26909b95e0b48a92beff981e4af1a947e0f4eaf4515fb45d81de571b7a5aaeb0.m3u8
-#EXTINF:-1,中天新聞FHD
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/litiande03/epg/refs/heads/master/pl.xml.gz"
+
+#--- 無線電視分組 ---
+
+#EXTINF:-1 tvg-id="台視新聞台" tvg-name="台視" group-title="無線電視",台視 (備路1)
+rtmp://f13h.mine.nu/sat/tv071
+
+#EXTINF:-1 tvg-id="台視新聞台" tvg-name="台視" group-title="無線電視",台視 (備路2)
+http://74.91.26.218:82/live/ttv.m3u8
+
+#EXTINF:-1 tvg-id="台視新聞台" tvg-name="台視" group-title="無線電視",台視 (備路3)
+https://t.freetv.fun/live/tai-shi.ts
+
+#EXTINF:-1 tvg-id="中視新聞台" tvg-name="中視" group-title="無線電視",中視 (備路1)
+rtmp://f13h.mine.nu/sat/tv091
+
+#EXTINF:-1 tvg-id="中視新聞台" tvg-name="中視" group-title="無線電視",中視 (備路2)
+http://74.91.26.218:82/live/ctv.m3u8
+
+#EXTINF:-1 tvg-id="華視新聞台" tvg-name="華視" group-title="無線電視",華視 (備路1)
+rtmp://f13h.mine.nu/sat/tv111
+
+#EXTINF:-1 tvg-id="華視新聞台" tvg-name="華視" group-title="無線電視",華視 (備路2)
+http://74.91.26.218:82/live/cts.m3u8
+
+#EXTINF:-1 tvg-id="東森新聞台" tvg-name="東森" group-title="無線電視",東森 (備路1)
+https://t.freetv.fun/live/dong-sen-xin-wen.m3u8
+
+#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天" group-title="無線電視",中天 (備路1)
 rtmp://ai.unispc.com/live/nb-py-ztxw
-#EXTINF:-1,中視
-rtmp://f13h.mine.nu/sat/tv091
-#EXTINF:-1,中視
-rtmp://f13h.mine.nu/sat/tv091
-#EXTINF:-1,中視
-rtmp://f13h.mine.nu/sat/tv091
-#EXTINF:-1,中視HD
-rtmp://f13h.mine.nu:1935/sat/tv091
-#EXTINF:-1,人間衛視
-https://stream1.freetv.fun/1f63ffacdc4c93b5736f59829aac1fccdf3df1e37bf8ba95c258b6e7d946d8a7.m3u8
-#EXTINF:-1,人間衛視
-https://stream1.freetv.fun/5b84e533cb668769468a8f5dbc6fe5cd1cb13b02fed0c7ca665de291f59d7cee.ctv
-#EXTINF:-1,台視HD
-rtmp://f13h.mine.nu:1935/sat/tv071
-#EXTINF:-1,唯心電視
-https://stream1.freetv.fun/8504e361f4e3695636554cec8e3bbce02b6e92e1fcad28512028166b7342aeac.m3u8
-#EXTINF:-1,唯心電視
-https://stream1.freetv.fun/69354b17f120facf9f500285793070d33efe35ae6abece2367865e4871a94697.m3u8
-#EXTINF:-1,寰宇新聞
-https://stream1.freetv.fun/13300dfea952c75aa1e5224308a7721600e4dd582257c548582e82172e76c293.ctv
-#EXTINF:-1,寰宇新聞FHD
-https://stream1.freetv.fun/cc3ac399d86099e5a3206d38ac3738ad97285b606895947d3786fbcd544081fd.m3u8
-#EXTINF:-1,寰宇新聞FHD
-https://stream1.freetv.fun/d9e077d94c5ba3a10f9d1a26d5c1f3aa5d4d3f811e1f85120c5b742aaa506157.m3u8
-#EXTINF:-1,東森超視
-rtmp://f13h.mine.nu/sat/tv331
-#EXTINF:-1,東森超視
-rtmp://f13h.mine.nu/sat/tv331
-#EXTINF:-1,東森超視
-https://stream1.freetv.fun/1efcf802b922763bf4c9978675845050bb654636837f7b52293d56ebaf8a7681.m3u8
-#EXTINF:-1,東森超視
-rtmp://f13h.mine.nu/sat/tv331
-#EXTINF:-1,東森超視
-https://stream1.freetv.fun/bf0c93b73b47a18039f8e42d027ba66e63d7627ddfbfbd47a2ea77784413a4bc.m3u8
-#EXTINF:-1,東森超視
-rtmp://f13h.mine.nu/sat/tv331
-#EXTINF:-1,東森超視
-https://stream1.freetv.fun/4841f92caa221d466621b8d272963e3ccfca30c2b83fcc9ad4d53eff03aeef6b.m3u8
-#EXTINF:-1,東森超視
-https://stream1.freetv.fun/e633e99f033cfd288478cf08e3082be17ec60cfdf59f0d7f8afe77b627a50d8c.m3u8
-#EXTINF:-1,民視
-https://stream1.freetv.fun/0079988bc2d8480a6183499774a232fc11657753bcb7d97a8dee88b362c57815.ctv
-#EXTINF:-1,民視
-rtmp://f13h.mine.nu/sat/tv051
-#EXTINF:-1,民視
-rtmp://f13h.mine.nu/sat/tv051
-#EXTINF:-1,民視
-rtmp://f13h.mine.nu/sat/tv051
-#EXTINF:-1,民視HD
-https://stream1.freetv.fun/ed33a7dbe6cc7ae35601519b5f4f9d4e36648444d8d3296d1333b0756fd7b734.m3u8
-#EXTINF:-1,民視HD
-https://stream1.freetv.fun/9a48c1ba6fb531955bf8e4f7b8b9287d04004bee66375eed876ef887b7275a30.m3u8
-#EXTINF:-1,民視第一臺
-https://stream1.freetv.fun/f32a002e543373c0d454101f6ce00d8f8d6eba32f9fbbae0890b90eb381d800a.ctv
-#EXTINF:-1,緯來日本
-rtmp://f13h.mine.nu/sat/tv771
-#EXTINF:-1,緯來日本
-rtmp://f13h.mine.nu/sat/tv771
-#EXTINF:-1,緯來日本
-rtmp://f13h.mine.nu/sat/tv771
-#EXTINF:-1,緯來日本
-rtmp://f13h.mine.nu/sat/tv771
-#EXTINF:-1,緯來育樂
-rtmp://f13h.mine.nu/sat/tv701
-#EXTINF:-1,緯來育樂
-rtmp://f13h.mine.nu/sat/tv701
-#EXTINF:-1,緯來體育
-rtmp://f13h.mine.nu/sat/tv721
-#EXTINF:-1,緯來體育
-rtmp://f13h.mine.nu:1935/sat/tv721
-#EXTINF:-1,緯來體育
-rtmp://f13h.mine.nu/sat/tv721
-#EXTINF:-1,緯來體育
-rtmp://f13h.mine.nu/sat/tv721
-#EXTINF:-1,緯來體育
-rtmp://f13h.mine.nu:1935/sat/tv721
-#EXTINF:-1,臺視新聞臺
-https://stream1.freetv.fun/d96ca80f2e6d7eb1a1737aaf17284caded271210e4432dfb4378a9ab6d8ef7b2.m3u8
-#EXTINF:-1,華視
-rtmp://f13h.mine.nu/sat/tv111
-#EXTINF:-1,華視
-rtmp://f13h.mine.nu/sat/tv111
-#EXTINF:-1,靖天卡通
-https://stream1.freetv.fun/0b06852a4383bf7789b8e62c223d2313b29f2cc1588ff7de22859c87af7a3c39.ctv
-#EXTINF:-1,非凡新聞HD
+
+#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天" group-title="無線電視",中天 (備路2)
+rtmp://ai.unispc.com/live/nb-py-ztxw
+
+#EXTINF:-1 tvg-id="中天新聞台" tvg-name="中天" group-title="無線電視",中天 (備路3)
+rtmp://home.aceimage.cn/live/332123-ztxw
+
+#EXTINF:-1 tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" group-title="無線電視",TVBS (備路1)
+https://t.freetv.fun/live/tvbsxin-wen-1.m3u8
+
+#EXTINF:-1 tvg-id="TVBS新聞台" tvg-name="TVBS新聞台" group-title="無線電視",TVBS (備路2)
+https://t.freetv.fun/live/tvbsxin-wen-1-2.php
+
+#EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" group-title="無線電視",TVBS (備路1)
+https://t.freetv.fun/live/tvbsxin-wen-1-1.m3u8
+
+#EXTINF:-1 tvg-id="TVBS" tvg-name="TVBS" group-title="無線電視",TVBS (備路2)
+https://t.freetv.fun/live/tvbs-1.m3u8
+
+#EXTINF:-1 tvg-id="東森財經新聞台" tvg-name="東森" group-title="無線電視",東森 (備路1)
+https://t.freetv.fun/live/dong-sen-xin-wen.m3u8
+
+#EXTINF:-1 tvg-id="非凡新聞台" tvg-name="非凡新聞台" group-title="無線電視",非凡新聞台 (備路1)
 rtmp://f13h.mine.nu/sat/tv581
-#EXTINF:-1,龍華經典
-https://stream1.freetv.fun/c2275b572ec49684dc532efc606c5f6b264581f346379559e72ec2137c1ecb1d.ctv
-#EXTINF:-1,龍華電影
+
+#EXTINF:-1 tvg-id="寰宇新聞台" tvg-name="寰宇新聞台" group-title="無線電視",寰宇新聞台 (備路1)
+https://t.freetv.fun/live/huan-yu-xin-wen-1.m3u8
+
+#EXTINF:-1 tvg-id="寰宇新聞台灣台" tvg-name="寰宇新聞台灣台" group-title="無線電視",寰宇新聞台灣台 (備路1)
+https://t.freetv.fun/live/huan-yu-xin-wen-tai-wan.m3u8
+
+#--- 綜合電視分組 ---
+#EXTINF:-1 tvg-id="amc電影台" tvg-name="amc電影台" group-title="綜合電視",amc電影台 (備路1)
+https://t.freetv.fun/live/amcdian-ying.m3u8
+
+#EXTINF:-1 tvg-id="龍華電影台" tvg-name="龍華電影台" group-title="綜合電視",龍華電影台 (備路1)
 https://stream1.freetv.fun/f3e4792919e603bd0eb00254eb263931dbab92a22578853745d8dbe977714338.ctv
+
+#EXTINF:-1 tvg-id="龍華經典台" tvg-name="龍華經典台" group-title="綜合電視",龍華經典台 (備路1)
+https://stream1.freetv.fun/c2275b572ec49684dc532efc606c5f6b264581f346379559e72ec2137c1ecb1d.ctv
+
+#EXTINF:-1 tvg-id="喜劇電影台" tvg-name="喜劇電影台" group-title="綜合電視",喜劇電影台 (備路1)
+http://74.91.26.218:82/live/vlxjyy.m3u8
+
+#EXTINF:-1 tvg-id="黃百鳴電影台" tvg-name="黃百鳴電影台" group-title="綜合電視",黃百鳴電影台 (備路1)
+http://74.91.26.218:82/live/vlhbm.m3u8
+
+#EXTINF:-1 tvg-id="周潤發電影台" tvg-name="周潤發電影台" group-title="綜合電視",周潤發電影台 (備路1)
+http://74.91.26.218:82/live/vlzrf.m3u8
