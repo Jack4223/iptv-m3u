@@ -1,4 +1,4 @@
-#EXTM3U
+﻿#EXTM3U8
 #EXTINF:-1,台視 (備路2)
 http://74.91.26.218:82/live/ttv.m3u8
 #EXTINF:-1,台視 (備路3)
@@ -13,21 +13,19 @@ https://t.freetv.fun/live/tvbsxin-wen-1.m3u8
 https://t.freetv.fun/live/tvbsxin-wen-1-2.php
 #EXTINF:-1,TVBS (備路1)
 https://t.freetv.fun/live/tvbsxin-wen-1-1.m3u8
-#EXTINF:-1,TVBS (備路2)
-https://t.freetv.fun/live/tvbs-1.m3u8
-#EXTINF:-1,寰宇新聞台 (備路1)
-https://t.freetv.fun/live/huan-yu-xin-wen-1.m3u8
-#EXTINF:-1,寰宇新聞台灣台 (備路1)
-https://t.freetv.fun/live/huan-yu-xin-wen-tai-wan.m3u8
-#EXTINF:-1,amc電影台 (備路1)
-https://t.freetv.fun/live/amcdian-ying.m3u8
 #EXTINF:-1,喜劇電影台 (備路1)
 http://74.91.26.218:82/live/vlxjyy.m3u8
 #EXTINF:-1,黃百鳴電影台 (備路1)
 http://74.91.26.218:82/live/vlhbm.m3u8
 #EXTINF:-1,周潤發電影台 (備路1)
 http://74.91.26.218:82/live/vlzrf.m3u8
-#EXTINF:-1,國會頻道1
-http://61.58.60.230:9319/live/123.m3u8
-#EXTINF:-1,國會頻道2
-http://61.58.60.230:9319/live/124.m3u8
+#EXTINF:-1,DAZN 1(TW)
+https://stream1.freetv.fun/2c514f0327df08f640ef530faf4644b6c4992534050b7d4e09569c5b8aabf96b.m3u8
+#EXTINF:-1,Food Network(TW)
+https://stream1.freetv.fun/b82a7b8a2972a9e15529c339a5cbfa633dd4a212bb9a56dc301c230c15245598.ctv
+#EXTINF:-1,中天新聞FHD
+https://stream1.freetv.fun/26909b95e0b48a92beff981e4af1a947e0f4eaf4515fb45d81de571b7a5aaeb0.m3u8
+#EXTINF:-1,寰宇新聞FHD
+https://stream1.freetv.fun/d9e077d94c5ba3a10f9d1a26d5c1f3aa5d4d3f811e1f85120c5b742aaa506157.m3u8
+#EXTINF:-1,臺視新聞臺
+https://stream1.freetv.fun/d96ca80f2e6d7eb1a1737aaf17284caded271210e4432dfb4378a9ab6d8ef7b2.m3u8
