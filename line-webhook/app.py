@@ -141,16 +141,21 @@ def webhook():
         LAST_EVENT["received"] = True
         LAST_EVENT["type"] = e0.get("type")
         LAST_EVENT["source"] = e0.get("source", {})
-    for e in events:
-        src = e.get("source", {})
-        if "groupId" in src:
-            add_id("group_ids", src["groupId"])
-            WRITE_LOG.append(f"got group_id={src['groupId']}")
-        elif "userId" in src and "roomId" not in src:
-            add_id("user_ids", src["userId"])
-            WRITE_LOG.append(f"got user_id={src['userId']}")
-        else:
-            WRITE_LOG.append(f"event no id: type={e.get('type')} src_keys={list(src.keys())}")
+    # ★ 關鍵：先立即回應 200（LINE 要求極快回應，否則判定逾時放棄），
+    #   再用背景線程慢慢處理存檔，避免我們的處理拖慢回應導致 LINE 放棄推送。
+    import threading
+    def _process():
+        for e in events:
+            src = e.get("source", {})
+            if "groupId" in src:
+                add_id("group_ids", src["groupId"])
+                WRITE_LOG.append(f"got group_id={src['groupId']}")
+            elif "userId" in src and "roomId" not in src:
+                add_id("user_ids", src["userId"])
+                WRITE_LOG.append(f"got user_id={src['userId']}")
+            else:
+                WRITE_LOG.append(f"event no id: type={e.get('type')} src_keys={list(src.keys())}")
+    threading.Thread(target=_process, daemon=True).start()
     return "OK", 200
 
 
