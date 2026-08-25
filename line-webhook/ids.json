@@ -1,4 +1,6 @@
 {
-  "group_ids": [],
+  "group_ids": [
+    "DIAG_CHECK_20260825"
+  ],
   "user_ids": []
 }
