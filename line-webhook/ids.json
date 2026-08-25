@@ -1,4 +1,6 @@
 {
-  "group_ids": [],
+  "group_ids": [
+    "SELFWRITE_PROBE"
+  ],
   "user_ids": []
 }
