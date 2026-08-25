@@ -1,22 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-部署到 Render 的 LINE webhook 接收器（穩定版）：
+部署到 Render 的 LINE webhook 接收器（v2：本地+GitHub 雙寫，首頁顯示聯集）：
 
-  - LINE 設定 webhook 時會發 GET 驗證 -> 回 200 OK
-  - 群組/好友發話 -> LINE POST 事件 -> 從 source 抓 groupId / userId
-  - 抓到的 ID 會：
-      1) 快取在本地 ids.json（Render 重啟會清掉，僅當暫存）
-      2) 同時寫回 GitHub 倉庫 line-webhook/ids.json（永久保存，跨重啟不丟失）
+  - GET /            -> 顯示目前已抓到的 group_ids / user_ids
+                        （聯集：GitHub 上的 + Render 本地的，任一处有就顯示）
+  - GET /webhook     -> LINE 驗證回 OK
+  - POST /webhook    -> 收 LINE 事件，抓 groupId / userId
+                        1) 寫本地 ids.json（Render 本地，快取）
+                        2) 嘗試寫回 GitHub（持久化，跨重啟不丟；失敗也不影響本地）
 
-  - 首頁 / 顯示目前已抓到的所有 ID（從 GitHub 讀回，渲染成 JSON）
-
-部署：
-  - Render Web Service，Runtime = Python 3
-  - Build: pip install -r requirements.txt   （注意：Render 若設了 Root Directory=line-webhook，
-    不要在前綴重複寫 line-webhook/，Build 只寫 pip install -r requirements.txt）
-  - Start: gunicorn app:app --bind 0.0.0.0:$PORT
-  - 環境變數：GITHUB_TOKEN = 你的 fine-grained PAT（範圍含本 repo 讀寫）
+  這版不強依賴 GitHub 寫入成功：即使 GITHUB_TOKEN 在 Render 端讀不到，
+  本地仍會存住 id，首頁讀本地就能看到，方便即時抓取 group_id。
 """
 import os, json, base64, datetime
 from flask import Flask, request, jsonify
@@ -25,26 +20,21 @@ import requests
 BASE = os.path.dirname(os.path.abspath(__file__))
 IDS_FILE = os.path.join(BASE, "ids.json")
 
-# GitHub 設定（寫回的位置）
 REPO = "Jack4223/iptv-m3u"
 BRANCH = "main"
 GH_PATH = "line-webhook/ids.json"
 
 PORT = int(os.environ.get("PORT", 10000))
-# Render 的環境變數 GITHUB_TOKEN；若沒設，嘗試從同 repo 的 .github_token 讀（部署時可掛）
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 
 app = Flask(__name__)
 
 
 def _gh_headers():
-    return {
-        "Authorization": f"Bearer {TOKEN}",
-        "Accept": "application/vnd.github+json",
-    }
+    return {"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"}
 
 
-def load_ids_local():
+def load_local():
     if os.path.exists(IDS_FILE):
         try:
             return json.load(open(IDS_FILE, encoding="utf-8"))
@@ -53,31 +43,30 @@ def load_ids_local():
     return {"group_ids": [], "user_ids": []}
 
 
-def load_ids_github():
-    """從 GitHub 讀回已保存的 ids.json（跨 Render 重啟也不丟）"""
+def load_github():
     if not TOKEN:
         return None
-    url = f"https://api.github.com/repos/{REPO}/contents/{GH_PATH}"
     try:
-        r = requests.get(url, headers=_gh_headers(), params={"ref": BRANCH}, timeout=20)
+        r = requests.get(
+            f"https://api.github.com/repos/{REPO}/contents/{GH_PATH}",
+            headers=_gh_headers(), params={"ref": BRANCH}, timeout=20)
         if r.status_code == 200:
-            content = base64.b64decode(r.json()["content"]).decode("utf-8")
-            return json.loads(content)
+            return json.loads(base64.b64decode(r.json()["content"]).decode("utf-8"))
     except Exception:
         pass
     return None
 
 
-def save_ids(ids):
-    """本地快取 + 寫回 GitHub"""
-    # 1) 本地快取
+def save_local(ids):
     try:
         json.dump(ids, open(IDS_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     except Exception:
         pass
-    # 2) 寫回 GitHub
+
+
+def save_github(ids):
     if not TOKEN:
-        return
+        return False
     url = f"https://api.github.com/repos/{REPO}/contents/{GH_PATH}"
     sha = None
     try:
@@ -87,40 +76,48 @@ def save_ids(ids):
     except Exception:
         pass
     content_b64 = base64.b64encode(
-        json.dumps(ids, ensure_ascii=False, indent=2).encode("utf-8")
-    ).decode("ascii")
-    body = {
-        "message": f"line-webhook: update ids {datetime.datetime.now().isoformat()}",
-        "content": content_b64,
-        "branch": BRANCH,
-    }
+        json.dumps(ids, ensure_ascii=False, indent=2).encode("utf-8")).decode("ascii")
+    body = {"message": f"line-webhook: update {datetime.datetime.now().isoformat()}",
+            "content": content_b64, "branch": BRANCH}
     if sha:
         body["sha"] = sha
     try:
-        requests.put(url, headers=_gh_headers(), json=body, timeout=20)
+        r = requests.put(url, headers=_gh_headers(), json=body, timeout=20)
+        return r.status_code in (200, 201)
     except Exception:
-        pass
+        return False
 
 
 def add_id(kind, val):
-    # 優先以 GitHub 上的資料為準，避免本地/遠端不同步
-    ids = load_ids_github() or load_ids_local()
-    if kind not in ids:
-        ids[kind] = []
-    if val and val not in ids[kind]:
-        ids[kind].append(val)
-        save_ids(ids)
-    return ids
+    if not val:
+        return
+    # 以 GitHub 為準合併，避免本地/遠端分歧
+    gh = load_github() or {"group_ids": [], "user_ids": []}
+    loc = load_local()
+    merged = {"group_ids": list(set(gh.get("group_ids", []) + loc.get("group_ids", []))),
+              "user_ids": list(set(gh.get("user_ids", []) + loc.get("user_ids", [])))}
+    if kind not in merged:
+        merged[kind] = []
+    if val not in merged[kind]:
+        merged[kind].append(val)
+        save_local(merged)          # 本地一定存
+        save_github(merged)         # GitHub 嘗試存（失敗也不影響）
 
 
 @app.route("/", methods=["GET"])
 def home():
-    ids = load_ids_github() or load_ids_local()
+    gh = load_github() or {"group_ids": [], "user_ids": []}
+    loc = load_local()
+    all_g = list(set(gh.get("group_ids", []) + loc.get("group_ids", [])))
+    all_u = list(set(gh.get("user_ids", []) + loc.get("user_ids", [])))
     return jsonify({
         "status": "ok",
-        "service": "line-webhook-id-collector",
-        "group_ids": ids.get("group_ids", []),
-        "user_ids": ids.get("user_ids", []),
+        "service": "line-webhook-id-collector-v2",
+        "github_group_ids": gh.get("group_ids", []),
+        "local_group_ids": loc.get("group_ids", []),
+        "group_ids": all_g,
+        "user_ids": all_u,
+        "token_present": bool(TOKEN),
     })
 
 
@@ -129,12 +126,10 @@ def webhook():
     if request.method == "GET":
         return "OK", 200
     data = request.get_json(silent=True) or {}
-    events = data.get("events", [])
-    for e in events:
+    for e in data.get("events", []):
         src = e.get("source", {})
         if "groupId" in src:
             add_id("group_ids", src["groupId"])
-        # 僅當「不在群組/聊天室」時才記錄為個人 user_id（避免把群組成員誤記）
         if "userId" in src and "groupId" not in src and "roomId" not in src:
             add_id("user_ids", src["userId"])
     return "OK", 200
