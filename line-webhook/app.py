@@ -29,6 +29,10 @@ TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or ""
 
 app = Flask(__name__)
 
+# 記憶體診斷（不依賴檔案系統，確保能看到 LINE 送來的原始事件）
+LAST_EVENT = {"received": False}
+WRITE_LOG = []
+
 
 def _gh_headers():
     return {"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"}
@@ -112,12 +116,16 @@ def home():
     all_u = list(set(gh.get("user_ids", []) + loc.get("user_ids", [])))
     return jsonify({
         "status": "ok",
-        "service": "line-webhook-id-collector-v2",
+        "service": "line-webhook-id-collector-v3",
         "github_group_ids": gh.get("group_ids", []),
         "local_group_ids": loc.get("group_ids", []),
         "group_ids": all_g,
         "user_ids": all_u,
         "token_present": bool(TOKEN),
+        "last_event_received": LAST_EVENT.get("received", False),
+        "last_event_source": LAST_EVENT.get("source"),
+        "last_event_type": LAST_EVENT.get("type"),
+        "write_log": WRITE_LOG[-5:],
     })
 
 
@@ -126,12 +134,23 @@ def webhook():
     if request.method == "GET":
         return "OK", 200
     data = request.get_json(silent=True) or {}
-    for e in data.get("events", []):
+    # 記錄原始事件（記憶體，診斷用）
+    events = data.get("events", [])
+    if events:
+        e0 = events[0]
+        LAST_EVENT["received"] = True
+        LAST_EVENT["type"] = e0.get("type")
+        LAST_EVENT["source"] = e0.get("source", {})
+    for e in events:
         src = e.get("source", {})
         if "groupId" in src:
             add_id("group_ids", src["groupId"])
-        if "userId" in src and "groupId" not in src and "roomId" not in src:
+            WRITE_LOG.append(f"got group_id={src['groupId']}")
+        elif "userId" in src and "roomId" not in src:
             add_id("user_ids", src["userId"])
+            WRITE_LOG.append(f"got user_id={src['userId']}")
+        else:
+            WRITE_LOG.append(f"event no id: type={e.get('type')} src_keys={list(src.keys())}")
     return "OK", 200
 
 
