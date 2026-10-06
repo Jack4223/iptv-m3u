@@ -5,7 +5,6 @@ https://live.metshop.top/huya/11342424
 https://live.metshop.top/huya/29982675
 #EXTINF:-1 tvg-name="周星馳電影" tvg-id="周星馳電影" tvg-logo="https://tb.zbds.top/logo/周星馳電影.png" group-title="影星頻道", 周星馳電影
 https://live.metshop.top/huya/11342412
-#EXTINF:-1 tvg-name="周星馳電影" tvg-id="周星馳電影" tvg-logo="https://tb.zbds.top/logo/周星馳電影.png" group-title="影星頻道", 周星馳電影
 http://live.metshop.top/huya/11336587
 #EXTINF:-1 tvg-name="强森電影" tvg-id="强森電影" tvg-logo="https://tb.zbds.top/logo/强森電影.png" group-title="影星頻道", 强森電影
 https://live.metshop.top/huya/21059581
@@ -30,5 +29,5 @@ https://live.metshop.top/huya/11352876
 
 #EXTINF:-1 tvg-id="AXNAsia.sg@Taiwan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="電影頻道",AXN Asia Taiwan (1080p)
 http://125.227.210.55:4050/VideoInput/play.ts
-#EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="電視頻道",TVBS-Asia (1080p)
+#EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="新聞频道",TVBS-Asia (1080p)
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
